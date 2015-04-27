@@ -23,6 +23,10 @@ gem 'ckeditor', '~> 4.0.6'
 
 gem 'paperclip'
 
+gem 'cancan'
+
+gem 'devise'
+
 group :development, :test do
   gem 'byebug'
 
