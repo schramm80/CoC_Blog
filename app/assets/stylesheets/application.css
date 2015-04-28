@@ -12,5 +12,8 @@
  *
  *= require_tree .
  *= require_self
+//= require syntaxhighliter/shCore.css
+//= require syntaxhighliter/shThemeDjango.css
  */
+
 body { padding-top: 50px; }
