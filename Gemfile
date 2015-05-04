@@ -19,7 +19,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'ckeditor', '~> 4.0.6'
 
-gem 'html_truncator', '~> 0.3.1'
+gem "html_truncator", "~>0.2"
 
 gem 'paperclip'
 

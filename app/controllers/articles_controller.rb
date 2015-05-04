@@ -1,8 +1,6 @@
 class ArticlesController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-  
-
 
 
   # GET /articles
@@ -19,6 +17,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
+    @article.user = current_user
   end
 
   # GET /articles/1/edit
@@ -27,6 +26,7 @@ class ArticlesController < ApplicationController
 
   # POST /articles
   # POST /articles.json
+  require "html_truncator"
   def create
     @article = Article.new(article_params)
     @article.preview = HTML_Truncator.truncate(@article.body, 300)
