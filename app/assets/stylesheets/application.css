@@ -16,4 +16,7 @@
 //= require syntaxhighliter/shThemeDjango.css
  */
 
-body { padding-top: 50px; }
+ body {
+ 	padding-top: 70px;
+ 	padding-bottom: 30px;
+ }

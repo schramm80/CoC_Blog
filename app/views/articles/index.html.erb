@@ -14,7 +14,7 @@
 
   <p>
     <em>
-      Posted by <%= article.user.username %> on <%= article.created_at.strftime("%B %d, %Y") %><br />
+      Posted by <%= article.user %> on <%= article.created_at.strftime("%B %d, %Y") %><br />
       last update <%= article.updated_at.strftime("%B %d, %Y") %><br />
     </em>
   </p>
