@@ -11,8 +11,9 @@ module CoCBlog
 
     config.generators do |g|
      g.test_framework  nil, :fixture => false
+     g.stylesheets false
     end
-    
+
     config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
 
     config.active_record.raise_in_transactional_callbacks = true

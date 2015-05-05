@@ -15,7 +15,7 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
-    @article.user = current_user
+    @article.user = current_user 
   end
 
 
@@ -69,7 +69,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
-  
+
   def article_params
     params.require(:article).permit(:title, :body, :published)
   end
