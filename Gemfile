@@ -27,6 +27,10 @@ gem 'cancan'
 
 gem 'devise'
 
+group :production do
+	gem 'therubyracer'
+end
+
 group :development, :test do
   gem 'byebug'
 
