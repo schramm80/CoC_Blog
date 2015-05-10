@@ -19,15 +19,15 @@
     </em>
   </p>
 
-  <div class="buttons">
-    <%= link_to 'Read', article, :class => "btn btn-primary" %>
+  <div class="btn-group btn-group-lg" role="group" aria-label="Small button group">
+    <%= link_to 'Read', article, :class => "btn btn-read" %>
 
     <% if can? :update, article %>
-    <%= link_to 'Edit', edit_article_path(article), :class => "btn btn-default" %>
+    <%= link_to 'Edit', edit_article_path(article), :class => "btn btn-edit" %>
     <% end %>
 
     <% if can? :destroy, article %>
-    <%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-danger" %>
+    <%= link_to 'Delete', article, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-delete" %>
     <% end %>
   </div>
 
