@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= require ckeditor/init
 //= require syntaxhighliter/shCore.js
 //= require syntaxhighliter/shBrushBash.js
 //= require syntaxhighliter/shBrushAppleScript.js
