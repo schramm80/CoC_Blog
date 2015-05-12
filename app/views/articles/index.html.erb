@@ -1,10 +1,14 @@
+<% content_for :head do %>
+	<title>CoC Blog - All Articles</title>
+<% end %>
+
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
 
       <% if can? :create, @article %>
       <%= link_to 'New Article', new_article_path, :class => 'btn btn-primary' %><br />
       <% end %>
-    
+
       <% @articles.each do |article| %>
 
       <div class="page-header">
