@@ -1,0 +1,15 @@
+<% content_for :head do %>
+<title>Consigliere - <%= @static_page.title %></title>
+<% end %>
+
+<div class="row">
+  <div class="col-md-8 col-md-offset-2">
+    <%= @static_page.body.html_safe %>
+    <div class="buttons">
+      <% if can? :update, @static_page %>
+      <%= link_to 'Edit', edit_static_page_path(@static_page), :class => "btn btn-primary" %>
+      <% end %>
+    </div>
+
+  </div>
+</div>
