@@ -216,11 +216,11 @@ GEM
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
-    thread_safe (0.3.5)
+    thread_safe (0.3.6)
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
-    tzinfo (1.2.2)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     uglifier (2.7.1)
       execjs (>= 0.3.0)
@@ -248,7 +248,6 @@ DEPENDENCIES
   jquery-rails
   paperclip
   rails (= 4.2.0)
-  rb-fsevent
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
